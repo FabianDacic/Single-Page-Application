@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="taskbar">
+    <div class="icons">
+        <div class="icons-left">
+            <a href="" id="start-menu"><i class="fab fa-windows"></i></a>
+            <a href="" id="search"></a>
+            <a href="" class="px"></a>
+            <a href="" id="folder" class="border"></a>
+            <a href="" id="chrome" class="border"></a>
+            <a href="" id="carpool" class="border"></a>
+        </div>
+        <div class="icons-right">
+                <a href="" id="sound" class="small-icons"></a>
+                <a href="" id="wifi" class="small-icons"></a>
+                <div class="datetime">
+                    <span id="hourOfStartup" class="hour">
+                    </span>
+                    <span id="dateOfStartup" class="date">
+                    </span>
+                </div>
+                <a href="" class="clear disabled"></a>
+                <a href="" id="return"></a>
+        </div>
+    </div>
+</div>
+
+<div id = "container" class="desktop">
+        <ul>
+            <li id="chatApp" class="icon-desktop" ><img src="./img/desktop/messenger.png"/><span>Chat</span></li>
+            <li class="icon-desktop" id = "memoryApp"><img src="./img/desktop/memory.png" /><span>Memory</span></li>
+            <li class="icon-desktop" id = "quizApp"><img src="./img/desktop/quiz.png"/><span>Quiz</span></li>
+            <li class="icon-desktop" id = "calculatorApp"><img src="./img/desktop/calculator.png"/><span>Calculator</span></li>
+        </ul>
+
+        <div id="allAlternatives">
+            <form class = "formContainer py dpx" id="selectedGrid">
+                <p>Please select the size of the grid for the memory game:</p>
+                <input class = "option-input radio" type="radio" id="2by2" name="choices" value="2 x 2">
+                <label for="2by2">2 x 2</label><br>
+                <input class = "option-input radio" type="radio" id="2by4" name="choices" value="2 x 4">
+                <label for="2by4">2 x 4</label><br>
+                <input class = "option-input radio" type="radio" id="4by4" name="choices" value="4 x 4">
+                <label for="4by4">4 x 4</label><br>
+            </form>
+        </div>
+
+        <template id="memory-template">
+            <div style="background-color: yellow;" id="memoryContainer">
+            </div>
+        </template>
+        <template id="memory-template-card">
+            <a href="card"><img src="./img/memory/info.png" alt="card"/></a>
+        </template>
+        
+    <div id="sound-modal">
+        <div class="sound-text">
+            <span>Speakers</span>
+        </div>
+        <div class="sound-progress">
+            <i class="fas fa-volume-up"></i>
+            <div class="bar-sound"></div>
+            <div class="bar-sound-drag"></div> 
+            <span class="data-value">50%</span>   
+        </div>
+    </div>
+
+    <div id="wifi-modal">
+            <div class="list-networks">
+                <div class="networks">
+                    <div class="icons-wifi">
+                    <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="text-wifi">
+                        <span class="name-wifi">Current network</span>
+                        <span class="type-wifi">Connected</span>
+                        <span class="propriety">Property</span>
+                        <button>Disconnect</button>
+                    </div>
+                </div>
+                <div class="networks">
+                        <div class="icons-wifi">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    <span class="name-wifi">Wifi</span>
+                    <span class="type-wifi">Available</span>
+                </div>
+                <div class="networks">
+                        <div class="icons-wifi">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    <span class="name-wifi">Wifi</span>
+                    <span class="type-wifi">Available</span>
+                </div>
+                <div class="options-wifi">
+                    <div class="options-bloc">
+                        <div class="bloc-options">
+                            <i class="fas fa-wifi"></i>
+                            <span>Wifi</span>
+                        </div>
+                        <div class="bloc-options">
+                            <i class="fas fa-plane"></i>
+                            <span>Airplane mode</span>
+                        </div>
+                        <div class="bloc-options">
+                            <i class="fab fa-bluetooth-b"></i>
+                            <span>Bluetooth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="chrome" id="chrome-pop-up">
+    <div class="pop-up">
+
+        <div class="chrome-top">
+            <div class="chrome-tabs">
+                <div class="triangle"></div>
+                <div class="tabs">
+                    <span class="icons-tabs">
+                        <i class="fab fa-codepen"></i>
+                    </span>
+                    <span class="text-tabs">Home</span>
+                    <span class="close-tabs">x</span>
+                </div>
+                <div class="triangle-2"></div>
+                <div class="new-tabs"></div>
+            </div>
+            <div class="chrome-close">
+                <a href=""><i class="fas fa-minus"></i></a>
+                <a href=""><i class="far fa-window-restore"></i></a>
+                <a href=""><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+        <!-- Bottom -->
+        <div class="chrome-bottom">
+            <div class="options-bar">
+                <div class="icons-bar">
+                    <div class="arrows">
+                        <a href=""><i class="fas fa-arrow-left"></i></a>
+                        <a href=""><i class="fas fa-arrow-right"></i></a>
+                        <a href=""><i class="fas fa-sync"></i></a>
+                    </div>
+                    <div class="search-bar">
+                        <span class="info"><i class="fas fa-lock"></i>Secured</span>
+                        <input type="text" value="http://google.com">
+                        <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="points-bar">
+                        <div class="points">
+                            <span>•</span>
+                            <span>•</span>
+                            <span>•</span>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <iframe src="http://google.com" frameborder="0" width="895px" height="404px"></iframe>
+    </div> 
+</div>
+
+<!-- Start menu -->
+<div id="start-menu-modal">
+    <div id="user">
+        <a class="push" href=""><i class="fas fa-bars"></i></a>
+        <a href=""><i class="fas fa-user"></i></a>
+        <a href=""><i class="fas fa-cog"></i></a>
+        <a href=""><i class="fas fa-power-off"></i></a>
+    </div>
+    <div id="others">
+    </div>
+</div>
+<script type="module" src="./js/script.js"></script> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.slim.min.js">
+var capture = $( ".capture" )
+			.attr( "tabindex", "-1" )
+			.focus()
+			.keydown(
+				function handleKeydown( event ) {
+					if ( event.key.toLowerCase() !== "tab" ) {
+						return;
+					}
+					var tabbable = $()
+						.add( capture.find( "[href]" ) )
+						.add( capture.find( "[tabindex]:not([tabindex='-1'])" ) )
+					;
+					var target = $( event.target );
+
+					if ( event.shiftKey ) {
+						if ( target.is( capture ) || target.is( tabbable.first() ) ) {
+							event.preventDefault();
+							tabbable.last().focus();
+						}
+					} else {
+						if ( target.is( tabbable.last() ) ) {
+							event.preventDefault();
+							tabbable.first().focus();
+						}
+					}
+				}
+			)
+		;
+</script>
+</body>
+</html>

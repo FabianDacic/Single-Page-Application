@@ -1,0 +1,27 @@
+{
+  "name": "a3-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "htmlhint": "npx htmlhint ./src || exit 0",
+    "stylelint": "npx stylelint \"./src/**/*.css\" || exit 0",
+    "stylelint:fix": "npx stylelint --fix \"./src/**/*.css\" || exit 0",
+    "eslint": "npx eslint . || exit 0",
+    "eslint:fix": "npx eslint . --fix || exit 0",
+    "jsdoc": "npx jsdoc -c .jsdoc.json || exit 0",
+    "lint": "npm run htmlhint && npm run stylelint && npm run eslint",
+    "clean": "rm -rf build/",
+    "clean-all": "npm run clean && rm -rf node_modules/ && rm -f package-lock.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv528/student/fd222fr/a3-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
