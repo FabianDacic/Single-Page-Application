@@ -1,11 +1,11 @@
-# A3 Spa
+# Single Page Application
 
 ## Author: Fabian Dacic
 
 ![Desktop](./src/img/selling-point.png)
 
 ### Introduction
-Hello and welcome to the 1DV528 SPA.
+Hello and welcome to the my SPA.
 Now to download the application, it is actually quite easy. 
 Either download it straight off this website or clone it by using the following commands in Git Bash:
 git clone https://github.com/FabianDacic/Single-Page-Application.git
