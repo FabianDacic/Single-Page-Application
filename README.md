@@ -1,6 +1,6 @@
 # A3 Spa
 
-## Author: Fabian Dacic (fd222fr)
+## Author: Fabian Dacic
 
 ![Desktop](./src/img/selling-point.png)
 
@@ -8,7 +8,7 @@
 Hello and welcome to the 1DV528 SPA.
 Now to download the application, it is actually quite easy. 
 Either download it straight off this website or clone it by using the following commands in Git Bash:
-git clone git@gitlab.lnu.se:1dv528/student/fd222fr/a2-quiz.git
+git clone https://github.com/FabianDacic/Single-Page-Application.git
 
 After downloading or cloning the repository to your machine, simply open the application with an IDE of your choice and then run the following command in the terminal:
 npm run serve
